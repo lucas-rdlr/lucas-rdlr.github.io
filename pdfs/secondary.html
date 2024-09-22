@@ -20,24 +20,28 @@
 
     <!------------------------ HEADER ------------------------>
     
-    <!-- <header>
+    <header>
         <nav class="navbar">
-            <div class="name"><a onclick="showSection(1)"><img src="imgs/foto-crop.png" alt="Lucas Rincon de la Rosa"></a></div>
+            <div class="name"><a onclick="showSection(1)"><img src="imgs/foto-crop.png" alt="Lucas Rincon de la Rosa">Lucas Rincon de la Rosa</a></div>
+            <!-- <div class="img-home"><img src="imgs/foto-crop.png" alt="Lucas Rincon de la Rosa"></div>
+            <div class="name"><a onclick="showSection(1)">Lucas Rincon de la Rosa</a></div> -->
             <ul class="links">
-                <li><i class="fa fa-envelope" aria-hidden="true"></i>
-                    <a href="lucas.rincondelarosa@icm-institute.org">email</a></li>
-                <li><i class="fa-brands fa-linkedin"></i>
-                    <a href="https://www.linkedin.com/in/lucas-rincon-de-la-rosa/">LinkedIn</a></li>
-                <li><i class="fa-brands fa-github"></i>
-                    <a href="https://github.com/lucas-rdlr">Github</a></li>
+                <li><a onclick="showSection(2)">About me</a></li>
+                <li><a onclick="showSection(3)">Education</a></li>
+                <li><a onclick="showSection(4)">Contact</a></li>
             </ul>
             <div class="toggle-btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </nav>
 
+        <div class="dropdown">
+            <li><a onclick="showSection(2)">About me</a></li>
+            <li><a onclick="showSection(3)">Education</a></li>
+            <li><a onclick="showSection(4)">Contact</a></li>
+        </div>
         <hr>
-    </header> -->
+    </header>
 
     <script>
         const toggleBtn = document.querySelector('.toggle-btn')
@@ -72,12 +76,6 @@
             <img src="imgs/icm.jpg" alt="ICM Background">
         </div>
 
-        <div class="title">
-            <p style="font-size: 35px; font-weight: bold; color: #12056b;">Lucas Rincón de la Rosa</p>
-            <p style="font-size: 20px; font-weight: bold; color: #9a9a9a;">PdD Student</p>
-            <p style="font-size: 20px; font-weight: bold; color: #9a9a9a;">Paris Brain Institute & Université Paris Saclay</p>
-        </div>
-
         <hr>
 
         <div class="content">
@@ -100,7 +98,7 @@
 
             <p style="font-weight: bold;">2024</p>
 
-            <p class="publications">
+            <div class="publications">
                 <font style="font-style: italic;">
                     Models for Gliomas Histopathology Image Classification.
                     <a class="pdf" target="_blank" href="pdfs/Lucas Rincon de la Rosa - Oligodendroglioma Poster.pdf">[Pdf]</a>
@@ -130,11 +128,11 @@
                 STAGATE as well as ScanPy. Our results demonstrate superior clustering metrics, highlighting the model's 
                 ability to maintain biological relevance.
 
-            </p>
+            </div>
 
             <p style="font-weight: bold;">2023</p>
 
-            <p class="publications">
+            <div class="publications">
                 <font style="font-style: italic;">
                     2D and 3D Analysis of Microscopy Images.
                     <a class="pdf" target="_blank" href="pdfs/Lucas Rincon de la Rosa - Internship report.pdf">[Pdf]</a>
@@ -151,11 +149,11 @@
                 point clouds or meshes instead of stack images and perform tracking on both 2D
                 and 3D datasets.
 
-            </p>
+            </div>
 
             <p style="font-weight: bold;">2022</p>
 
-            <p class="publications">
+            <div class="publications">
                 <font style="font-style: italic;">
                     Numerical study of the fractional time diffusion equation.
                     <a class="pdf" target="_blank" href="pdfs/Lucas Rincon de la Rosa - Mathematics report.pdf">[Pdf]</a>
@@ -188,19 +186,20 @@
                 solutions of the problem. Finally, last section is centered in the numerical study of the implicit
                 scheme, using example solutions with and without sufficient regularity as to test if the errors are
                 the ones derived from theory.
-            </p>
+
+            </div>
 
             <!------------------------ EXPERIENCE ------------------------>
 
             <h1>Curriculum Vitae</h1>
 
-            <p>
+            <div>
                 <ul class="interests">
                     <li><a class="pdf" target="_blank" href="pdfs/Lucas Rincon de la Rosa - CV english.pdf">English version</a></li>
                     <li><a class="pdf" target="_blank" href="pdfs/Lucas Rincon de la Rosa - CV english.pdf">French version</a></li>
                     <li><a class="pdf" target="_blank" href="pdfs/Lucas Rincon de la Rosa - CV english.pdf">Spanish version</a></li>
                 </ul>
-            </p>
+            </div>
 
             <!------------------------ INTERESTS ------------------------>
         
