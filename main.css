@@ -141,7 +141,7 @@ header {
 } */
 
 .img-container {
-    background-color: #fa4616;
+    /* background-color: #fa4616; */
     background-image: url(imgs/icm.jpg);
     display: flex;
     justify-content: center; /* horizontally center the content */
