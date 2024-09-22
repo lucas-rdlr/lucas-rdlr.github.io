@@ -176,11 +176,15 @@ header {
     text-align: justify;
 }
 
-.interests {
+.list {
+    font-size: 14px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.list-items {
     font-size: 14px;
     display: flex;
-    /* margin-left: 10%;
-    margin-right: 10%; */
     margin-bottom: 30px;
     justify-content: space-between;
 }
