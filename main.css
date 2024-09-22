@@ -70,9 +70,22 @@ header {
     justify-content: space-between;
 }
 
-.navbar .name {
+.name {
+    flex: 1;
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.name a {
+    display: flex;
+    align-items: center;
+}
+
+.navbar img {
+    height: 55px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 .navbar .links {
@@ -121,15 +134,22 @@ header {
     display: none;
 }
 
+/* .img-home img {
+    height: 55px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+} */
+
 .img-container {
     background-color: #fa4616;
+    background-image: url(imgs/icm.jpg);
     display: flex;
     justify-content: center; /* horizontally center the content */
     align-items: center; /* vertically center the content */
     width: 100%;
     height: 400px; /* or any desired height */
     overflow: hidden;
-  }
+}
 
 .img-container img {
     height: 60%; /* or any desired height */
