@@ -83,25 +83,37 @@ ul {
     padding: 0;
 }
 
+/* Add will-change to optimize rendering performance */
 #diaporama {
-    animation: slide-boucle 20s ease infinite 0s;
-  }
+    animation: slide-boucle 15s ease infinite 0s;
+    will-change: transform;
+    display: flex; /* Ensures images are in a row */
+}
+
+/* Keyframes updated with percentages adjusted for smoother transitions */
 @keyframes slide-boucle {
     0%, 15% {
-        transform: translate(0,0);
+        transform: translateX(0);
     }
     25%, 40% {
-        transform: translate(-100%,0);
+        transform: translateX(-100%);
     }
     50%, 65% {
-        transform: translate(-200%,0);
+        transform: translateX(-200%);
     }
     75%, 90% {
-        transform: translate(-300%,0);
+        transform: translateX(-300%);
     }
     100% {
-        transform: translate(0,0);
+        transform: translateX(0);
     }
+}
+
+@media (max-width: 500px) {
+    .content p {
+        font-size: 14px; /* Reduce the font size */
+    }
+
 }
 
 .title {
