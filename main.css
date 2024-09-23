@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', 'sans-serif';
-    /* border: 5px solid black; */
 }
 
 body {
@@ -13,12 +12,17 @@ body {
     background-size: cover;
     background-position: center;
     margin: 0 auto;
-    /* border: 5px solid blue; */
 }
 
 .content {
     padding: 30px 0;
     text-align: justify;
+}
+
+@media (max-width: 500px) {
+    .content p {
+        font-size: 14px; /* Reduce the font size */
+    }
 }
 
 h1 {
@@ -59,7 +63,7 @@ ul {
     width: 100%; /* Responsive width */
     height: auto; /* Allow height to adjust automatically */
     margin: 0 auto; /* Center the container */
-    margin-top: 0px;
+    margin-top: 20px;
     position: relative; /* Required for absolute positioning */
     overflow: hidden; /* Hide overflow */
 }
