@@ -4,6 +4,7 @@
     list-style: none;
     font-family: 'Open sans';
     box-sizing: border-box;
+
 }
 
 html {
@@ -35,6 +36,18 @@ a {
 
 a:hover {
     color: #0085bd;
+}
+
+.list {
+    /* font-size: 18px; */
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.list-items {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* <!------------------------ HEADER ------------------------> */
@@ -165,7 +178,8 @@ nav .button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 0 40px 0;
+    height: 500px;
+    margin: 0 auto;
     padding: 0;
     overflow: hidden;
     background-color: black;
@@ -177,6 +191,7 @@ nav .button {
     width: 100%;
     display: flex;
     justify-content: start;
+    align-items: center;
     padding: 0;
     aspect-ratio: 7 / 4;
 }
@@ -218,21 +233,27 @@ nav .button {
     .slider-img img {aspect-ratio: 7 / 5;}
 }
 
+
+/* <!------------------------ ABOUT ------------------------> */
+
+.container {
+    background-color: #FAFAFA;
+}
+
 section {
+    margin: 0 auto;
     padding: 0 75px 40px 75px;
+    max-width: 1000px;
 }
 
 section h1 {
     margin: 0 0 15px 0;;
 }
 
-
-/* <!------------------------ ABOUT ------------------------> */
-
 .about {
     display: flex;
     align-items: center;
-
+    padding: 40px 75px 40px 75px;
 }
 
 .about img {
@@ -267,6 +288,8 @@ section h1 {
 }
 
 @media(max-width: 800px) {
+    .slider {height: auto;}
+
     section {padding: 0 20px 30px 20px;}
 
     section p {font-size: 14px;}
@@ -285,7 +308,7 @@ section h1 {
     text-align: justify;
 }
 
-.year {
+.research .year {
     font-weight: bold;
     padding: 20px 0 5px 0;
 }
@@ -358,8 +381,29 @@ section h1 {
 
 /* <!------------------------ CURRICULUM ------------------------> */
 
+.experience {
+    display: flex;
+    margin: 0 0 10px 0;
+}
+
+.experience .year {
+    width: 460px;
+    font-weight: bold;
+}
+
 #phone {display: none;}
 
+.curriculum .list {
+    margin: 30px 0 0 0;
+}
+
+.curriculum a {
+    font-size: 16px;
+}
+
+.interests {
+    font-size: 16px;
+}
 
 /* <!------------------------ FOOTER ------------------------> */
 
@@ -377,21 +421,10 @@ footer a {
     text-decoration: none;
     color: rgba(222, 222, 222, .98);
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
     cursor: pointer;
 }
 
-.list {
-    font-size: 14px;
-    text-align: center;
-    margin: 0 auto;
-}
-
-
-.list-items {
-    display: flex;
-    justify-content: space-between;
-}
 
 @media(max-width: 800px) {
     footer {
@@ -400,5 +433,7 @@ footer a {
 
     #pc {display: none;}
     #phone {display: flex;}
+
+    .experience .year {width: 100px;}
 }
 
