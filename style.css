@@ -66,8 +66,17 @@ nav .title-name {
     width: 100%;
     font-weight: bold;
     padding: 30px 60px;
-    line-height: 15px;
+    /* line-height: 20px; */
     display: none;
+}
+
+nav .title-name .name {
+    font-size: 25px;
+}
+
+nav .title-name .position {
+    font-size: 18px;
+    color: lightgrey;
 }
 
 label {
@@ -94,12 +103,13 @@ label .place {
 nav ul {
     display: flex;
     justify-content: flex-end;
-    gap: 1rem;
+    gap: 2rem;
     padding: 0 60px;
 }
 
 header a{
     height: 100%;
+    font-size: 20px;
     text-decoration: none;
     color: white;
 }
@@ -137,21 +147,15 @@ nav .button {
 
 /* <!------------------------ RESPONSIVE ------------------------> */
 
+@media(max-width: 1300px) {
+    label h1 {font-size: 30px;}
+    label .position, label .place {
+        font-size: 18px;
+    }
+    header a {font-size: 16px;}
+}
+
 @media(max-width: 1100px) {
-    label h1 {font-size: 25px;}
-    label .position, label .place {
-        font-size: 15px;
-    }
-}
-
-@media(max-width: 950px) {
-    label h1 {font-size: 22px;}
-    label .position, label .place {
-        font-size: 12px;
-    }
-}
-
-@media(max-width: 900px) {
 
     nav label {display: none;}
     nav .links {display: none;}
@@ -168,6 +172,14 @@ nav .button {
     }
 
     .dropdown {display: block;}
+    .dropdown a {font-size: 16px;}
+}
+
+@media(max-width: 450px) {
+
+    nav .title-name .name {font-size: 18px;}
+
+    nav .title-name .position {font-size: 15px;}
 }
 
 
