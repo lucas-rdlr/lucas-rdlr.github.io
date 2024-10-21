@@ -39,7 +39,7 @@
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
 
-            <div class="button">
+            <div class="button-header">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </nav>
@@ -52,6 +52,20 @@
         </div>
     </header>
 
+    <script>
+        const toggleBtn = document.querySelector(".button-header")
+        const toggleBtnIcon = document.querySelector(".button-header i")
+        const dropDownMenu = document.querySelector(".dropdown")
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+
 
     <!------------------------ IMAGE SLIDER ------------------------>
     <div class="slider">
@@ -63,20 +77,6 @@
             <img src="imgs/nn.jpg" alt="ICM Image">
         </div>
     </div>
-
-    <script>
-        const toggleBtn = document.querySelector(".button")
-        const toggleBtnIcon = document.querySelector(".button i")
-        const dropDownMenu = document.querySelector(".dropdown")
-
-        toggleBtn.onclick = function () {
-            dropDownMenu.classList.toggle('open')
-            const isOpen = dropDownMenu.classList.contains('open')
-            toggleBtnIcon.classList = isOpen
-                ? 'fa-solid fa-xmark'
-                : 'fa-solid fa-bars'
-        }
-    </script>
 
     <div class="container">
 
