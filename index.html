@@ -52,19 +52,7 @@
         </div>
     </header>
 
-    <script>
-        const toggleBtn = document.querySelector(".button-header")
-        const toggleBtnIcon = document.querySelector(".button-header i")
-        const dropDownMenu = document.querySelector(".dropdown")
-
-        toggleBtn.onclick = function () {
-            dropDownMenu.classList.toggle('open')
-            const isOpen = dropDownMenu.classList.contains('open')
-            toggleBtnIcon.classList = isOpen
-                ? 'fa-solid fa-xmark'
-                : 'fa-solid fa-bars'
-        }
-    </script>
+    <script src="script.js"></script>
 
 
     <!------------------------ IMAGE SLIDER ------------------------>
@@ -126,11 +114,14 @@
         <p class="year" style="padding: 5px 0;">2024</p>
         <div class="report-v">
             <div class="text-report">
-                <p class="title-report">
-                    Models for Gliomas Histopathology Image Classification.
-                    <a class="pdf" target="_blank" href="pdfs/Lucas Rincon de la Rosa - Oligodendroglioma Poster.pdf">[Poster]</a>
-                </p>
-                <p>Abstract: Diffusely infiltrating gliomas in adults are currently classified into WHO grades 
+                <div class="title">
+                    <div class="button-text"><i class="fa-solid fa-caret-right"></i></div>
+                    <p class="title-report">
+                        Models for Gliomas Histopathology Image Classification.
+                        <a class="pdf" target="_blank" href="pdfs/Lucas Rincon de la Rosa - Oligodendroglioma Poster.pdf">[Poster]</a>
+                    </p>
+                </div>
+                <p class="abstract">Abstract: Diffusely infiltrating gliomas in adults are currently classified into WHO grades 
                 I–IV, reflecting varying malignancy levels. Recent advances have led to a refined classification 
                 of diffusely infiltrating gliomas in adults into three groups: IDH-mutant, 1p/19q codeleted tumors 
                 (best prognosis), IDH-mutant, 1p/19q non-codeleted tumors (intermediate prognosis), and IDH 
@@ -146,12 +137,15 @@
         <br>
         <div class="report-v">
             <div class="text-report">
-                <p class="title-report">
-                    Spatially-resolved transcriptomics meets Deep Learning: denoising omics data matrix using Optimal Transport and Graph Attention Networks.
-                    <a class="pdf" target="_blank" href="pdfs/Lucas Rincon de la Rosa - CSBC7th Poster.pdf">[Poster]</a>
-                    <a class="pdf" target="_blank" href="pdfs/Lucas Rincon de la Rosa - CSBC7th Slides.pdf">[Slides]</a>
-                </p>
-                <p>Abstract: In this study we introduce a novel deep learning model for denoising spatial transcriptomics 
+                <div class="title">
+                    <div class="button-text"><i class="fa-solid fa-caret-right"></i></div>
+                    <p class="title-report">
+                        Spatially-resolved transcriptomics meets Deep Learning: denoising omics data matrix using Optimal Transport and Graph Attention Networks.
+                        <a class="pdf" target="_blank" href="pdfs/Lucas Rincon de la Rosa - CSBC7th Poster.pdf">[Poster]</a>
+                        <a class="pdf" target="_blank" href="pdfs/Lucas Rincon de la Rosa - CSBC7th Slides.pdf">[Slides]</a>
+                    </p>
+                </div>
+                <p class="abstract">Abstract: In this study we introduce a novel deep learning model for denoising spatial transcriptomics 
                 RNA sequencing data, leveraging the power of optimal transport and graph attention mechanisms. 
                 We called our model Graph Attention with Optimal Transport, Transformers and Time diffusion (GO3T) 
                 which combines the mathematical accuracy of optimal transport to compute distance similarities with 
@@ -169,11 +163,14 @@
         <p class="year">2023</p>
         <div class="report-v">
             <div class="text-report">
-                <p class="title-report">
-                    2D and 3D Analysis of Microscopy Images.
-                    <a class="pdf" target="_blank" href="pdfs/Lucas Rincon de la Rosa - Internship report.pdf">[Pdf]</a>
-                </p>
-                <p>Abstract: This document collects the work during the second year master internship at the
+                <div class="title">
+                    <div class="button-text"><i class="fa-solid fa-caret-right"></i></div>
+                    <p class="title-report">
+                        2D and 3D Analysis of Microscopy Images.
+                        <a class="pdf" target="_blank" href="pdfs/Lucas Rincon de la Rosa - Internship report.pdf">[Pdf]</a>
+                    </p>
+                </div>
+                <p class="abstract">Abstract: This document collects the work during the second year master internship at the
                 Brain Institute of Paris (ICM) associated to the M2 master studied at Sorbonne
                 University. The main objective has been the study and analysis of 2D and 3D brain
                 cell images. More precisely, the segmentation and tracking of this cells as it can
@@ -192,30 +189,33 @@
         <p class="year">2022</p>
         <div class="report-v">
             <div class="text-report">
-                <p class="title-report">
-                    Numerical study of the fractional time diffusion equation.
-                    <a class="pdf" target="_blank" href="pdfs/Lucas Rincon de la Rosa - Mathematics report.pdf">[Pdf]</a>
-                </p>
-                <p>Abstract: The main objective of this work is the study of the fractional time diffusion equation. The Caputo
+                <div class="title">
+                    <div class="button-text"><i class="fa-solid fa-caret-right"></i></div>
+                    <p class="title-report">
+                        Numerical study of the fractional time diffusion equation.
+                        <a class="pdf" target="_blank" href="pdfs/Lucas Rincon de la Rosa - Mathematics report.pdf">[Pdf]</a>
+                    </p>
+                </div>
+                <p class="abstract">Abstract: The main objective of this work is the study of the fractional time diffusion equation. The Caputo
                 fractional derivative will be used for this purpose. In the first part of the study a time scheme
                 discretization will be applied to the fractional derivative, known as L1 scheme, and properties such
                 as stability, consistency and convergence will be studied for classical solutions. The main result
                 is the
                 <math xmlns="http://www.w3.org/1998/Math/MathML">
                     <mrow>
-                      <mi>O</mi>
-                      <mo>(</mo>
-                      <msup>
+                        <mi>O</mi>
+                        <mo>(</mo>
+                        <msup>
                         <mi>τ</mi>
                         <mrow>
-                          <mn>2</mn>
-                          <mo>−</mo>
-                          <mi>α</mi>
+                            <mn>2</mn>
+                            <mo>−</mo>
+                            <mi>α</mi>
                         </mrow>
-                      </msup>
-                      <mo>)</mo>
+                        </msup>
+                        <mo>)</mo>
                     </mrow>
-                  </math>
+                    </math>
                 error for solutions with adequate regularity, where alpha is the order of the fractional
                 derivative. Later, in the next two sections the space discretization will be added, so we end up with
                 two different schemes: implicit and explicit. The last one will be dismissed as the CFL consistency

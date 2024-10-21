@@ -15,17 +15,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    const toggleBtn2 = document.querySelector(".button-text")
-    const toggleBtnIcon2 = document.querySelector(".button-text i")
-    const dropDownMenu2 = document.querySelector(".paragraph .text-dd")
-    const dropText2 = document.querySelector(".paragraph .text")
+    const toggleBtns = document.querySelectorAll(".button-text");
 
-    toggleBtn2.onclick = function () {
-        dropText2.classList.toggle('close')
-        dropDownMenu2.classList.toggle('open')
-        const isOpen = dropDownMenu2.classList.contains('open')
-        toggleBtnIcon2.classList = isOpen
-            ? 'fa-solid fa-caret-down'
-            : 'fa-solid fa-caret-right'
-    };
+    toggleBtns.forEach((button) => {
+        button.addEventListener("click", function() {
+            const abstract = this.parentElement.nextElementSibling; // Select the related abstract
+            const icon = this.querySelector("i");
+
+            abstract.classList.toggle('open'); // Toggle the abstract's visibility
+            const isOpen = abstract.classList.contains('open');
+            
+            // Change icon based on whether the text is expanded or collapsed
+            icon.classList = isOpen
+                ? 'fa-solid fa-caret-down'
+                : 'fa-solid fa-caret-right';
+        });
+    });
 });

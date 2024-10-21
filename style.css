@@ -391,6 +391,24 @@ section h1 {
     height: auto;
 }
 
+.title {
+    display: flex;
+  }
+
+.button-text {
+    padding: 0 6px 0 0;
+    cursor: pointer;
+}
+  
+.abstract {
+    display: none;
+}
+
+.abstract.open {
+    display: block;
+}
+
+
 
 /* <!------------------------ CURRICULUM ------------------------> */
 
