@@ -402,6 +402,7 @@ section h1 {
   
 .abstract {
     display: none;
+    margin: 6px 0;
 }
 
 .abstract.open {
