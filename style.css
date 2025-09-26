@@ -321,6 +321,10 @@ section h1 {
     text-align: justify;
 }
 
+.research .title-report {
+    text-align: left; /* titles & abstracts stay left-aligned */
+}
+
 .research .year {
     font-weight: bold;
     padding: 20px 0 5px 0;
