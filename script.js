@@ -24,11 +24,27 @@ document.addEventListener("DOMContentLoaded", function() {
 
             abstract.classList.toggle('open'); // Toggle the abstract's visibility
             const isOpen = abstract.classList.contains('open');
-            
+
             // Change icon based on whether the text is expanded or collapsed
             icon.classList = isOpen
                 ? 'fa-solid fa-caret-down'
                 : 'fa-solid fa-caret-right';
         });
     });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const reports = document.querySelectorAll(".report-v");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("in-view");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
+
+    reports.forEach((report) => observer.observe(report));
 });
