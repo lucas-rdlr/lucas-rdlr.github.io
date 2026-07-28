@@ -60,11 +60,11 @@
     <!------------------------ IMAGE SLIDER ------------------------>
     <div class="slider">
         <div id="diaporama" class="slider-img">
-            <img src="imgs/histology.jpg" alt="Molecules Image">
-            <img src="imgs/molecules.jpg" alt="Molecules Image">
-            <img src="imgs/background.jpg" alt="Background Image">
-            <img src="imgs/dna.jpg" alt="ICM Image">
-            <img src="imgs/nn.jpg" alt="ICM Image">
+            <img src="imgs/background/histology.jpg" alt="Molecules Image">
+            <img src="imgs/background/molecules.jpg" alt="Molecules Image">
+            <img src="imgs/background/background.jpg" alt="Background Image">
+            <img src="imgs/background/dna.jpg" alt="ICM Image">
+            <img src="imgs/background/nn.jpg" alt="ICM Image">
         </div>
     </div>
 
@@ -105,6 +105,60 @@
         <!-- <div class="project">
             <h1></h1>
         </div> -->
+        <p class="year" style="padding: 5px 0;">2026</p>
+        <div class="report-v">
+            <div class="text-report">
+                <div class="title">
+                    <div class="button-text"><i class="fa-solid fa-caret-right"></i></div>
+                    <p class="title-report">
+                        Spatial analysis of paraneoplastic cerebellar degeneration in ovariancancer with anti‑Yo syndrome and SCA1.
+                        <a class="pdf" target="_blank" href="https://link.springer.com/epdf/10.1007/s00415-026-13884-0?sharing_token=hI9mGujiGEHRSfpYPBfl6ve4RwlQNchNByi7wbcMAY5X6_lvrjmECiDHJzxu33_q3NA8sxmhjSy4qUuaiz7HgVtfKx-qep4Mcwg595Dh8ELhQu-nBFWZywVFkfrH_8LTSY5xlQAQ-ISFokYGLxGOxFOwOUsQ2Dsn9akZ9arC_Ak%3D">[Article]</a>
+                    </p>
+                </div>
+                <p class="abstract">Abstract: Anti-Yo paraneoplastic cerebellar degeneration (PCD) is a rare autoimmune disorder linked to ovarian andbreast cancers. Neurological symptoms often precede cancer diagnosis, yet conventional imaging techniques may fail todetect early cerebellar changes. This study quantitatively assessed cerebellar atrophy and network alterations in anti-Yo PCDpatients compared to healthy controls and patients with spinocerebellar ataxia type 1 (SCA1).<br>
+                Methods. We analyzed structural MRI data from 11 antiYo PCD patients, 17 healthy controls, and 17 SCA1 patients. Cer-ebellar lobular segmentation and cortical thickness measurements were conducted. Structural covariance networks were builtusing inter-lobular Pearson correlation coefficients (threshold |r| > 0.5), with graph theory metrics assessing connectivity.Univariate and age-adjusted multivariate analyses evaluated group differences, and machine learning assessed the discrimi-native power of regional morphometric measures.<br>
+                Results. AntiYo PCD patients showed pronounced anterior cortical thinning, while SCA1 atrophy was milder and more pos-terior. Two PCD subtypes emerged: one with severe atrophy, another with nearnormal thickness. Network analysis revealedincreased node strength and clustering coefficients, but reduced betweenness centrality in PCD, suggesting altered networkhierarchy and widespread clustering that may reflect pathological reorganization. In cross-validated analysis, regional cer-ebellar features distinguished PCD, SCA1, and controls with promising AUC values.<br>
+                Conclusions. Anti-Yo PCD is characterized by anterior cerebellar vulnerability and network reorganization distinct fromSCA1. These morphometric and connectivity markers are candidate imaging biomarkers for early diagnosis and subgroupstratification in paraneoplastic cerebellar degeneration.</p>
+            </div>
+            <div class="img-report">
+                <img src="imgs/articles/antiYo.png" alt="antiYo article">
+            </div>
+        </div>
+
+        <br>
+        <div class="report-v">
+            <div class="text-report">
+                <div class="title">
+                    <div class="button-text"><i class="fa-solid fa-caret-right"></i></div>
+                    <p class="title-report">
+                        VelOT: kinetic-free RNA velocity inference via optimal transport, flow-field smoothing, and VAMP coarse-graining of cellular dynamics.
+                        <a class="pdf" target="_blank" href="https://www.biorxiv.org/content/10.64898/2026.06.04.730132v1">[Preprint]</a>
+                    </p>
+                </div>
+                <p class="abstract">Abstract: Inferring cellular dynamics from snapshot single-cell RNA sequencing remains difficult when spliced and unspliced counts are sparse or unreliable. We present VelOT, a kinetic-free RNA velocity framework that formulates dynamics as local optimal transport on the gene-expression manifold. VelOT orders cells by diffusion pseudotime, constructs overlapping spatial-temporal windows, estimates displacement vectors with entropy-regularized transport, and smooths them with a lightweight neural flow field. A downstream VAMP-based MetaFlow module learns soft meta-states and a directed PAGA-like graph, identifying initial, terminal, branching, and cycling regimes with committor probabilities. Across four real benchmarks and three synthetic topologies, VelOT outperforms scVelo, DeepVelo, and FluxMatching in cross-boundary directionality and intra-cluster coherence while remaining computationally efficient. In adult oligodendroglioma scRNA-seq, VelOT recovers stem-like to astrocyte-like and oligodendrocyte-like differentiation axes without kinetic inputs. VelOT reframes RNA velocity within scRNA-seq as a geometry and transport problem that does not require kinetic modeling.</p>
+            </div>
+            <div class="img-report">
+                <img src="imgs/articles/velot-pipeline.png" alt="Velot pipeline">
+            </div>
+        </div>
+
+        <br>
+        <div class="report-v">
+            <div class="text-report">
+                <div class="title">
+                    <div class="button-text"><i class="fa-solid fa-caret-right"></i></div>
+                    <p class="title-report">
+                        h5adify: neuro-symbolic metadata harmonization enables scalable AnnData integration with local large language models.
+                        <a class="pdf" target="_blank" href="https://www.biorxiv.org/content/10.64898/2026.02.28.708740v1">[Preprint]</a>
+                    </p>
+                </div>
+                <p class="abstract">Abstract: We present h5adify, a neuro-symbolic toolkit that combines deterministic biological inference with locally deployed large language models to transform heterogeneous AnnData objects into schema-normalized, integration-ready representations. The framework performs metadata field discovery, gene identifier harmonization, optional paper-aware extraction, and consensus resolution with explicit uncertainty logging. Benchmarking four open-weight model families deployed through Ollama (Gemma, Llama, Mistral, and Qwen) demonstrates that small local models achieve high semantic accuracy in metadata resolution with low hallucination rates and modest computational requirements. In controlled simulations introducing annotation noise into single-cell and Visium-like datasets, harmonization improves integration benchmarking and reduces spurious batch effects. Application to sex-annotated glioblastoma datasets recovers biologically coherent microenvironmental patterns and cell type–specific genomic differences not explained by differential expression alone.</p>
+            </div>
+            <div class="img-report">
+                <img src="imgs/articles/h5adify.jpg" alt="Velot pipeline">
+            </div>
+        </div>
+
         <p class="year" style="padding: 5px 0;">2025</p>
         <div class="report-v">
             <div class="text-report">
@@ -118,7 +172,7 @@
                 <p class="abstract">Abstract: Neurodegenerative Langerhans Cell Histiocytosis (ND-LCH) is a severe central nervous system involvement complicating LCH. ND-LCH is characterized by a cerebellar ataxia, pyramidal signs, pseudobulbar palsy, cognitive impairment, and behavioral disturbances. Cerebellar atrophy, the most common MRI finding, has been widely described in the literature. However, the natural history of volumetric changes in the cerebellum has never been examined. In this study, we aim to perform a quantitative analysis of cerebellar atrophy in ND-LCH patients compared to a control cohort.</p>
             </div>
             <div class="img-report">
-                <img src="imgs/histiocytosis.jpg" alt="Histiocytosis article">
+                <img src="imgs/articles/histiocytosis.jpg" alt="Histiocytosis article">
             </div>
         </div>
 
@@ -135,7 +189,7 @@
                 <p class="abstract">Abstract: Primary central nervous system lymphoma (PCNSL) treatment relies on a high-dose methotrexate-based chemotherapy (HD-MTX-based CT) regimen; however, whether there is a specific microbiota composition association with treatment response and clinical outcomes remains incompletely understood.</p>
             </div>
             <div class="img-report">
-                <img src="imgs/microbiome.png" alt="Microbiome article">
+                <img src="imgs/articles/microbiome.png" alt="Microbiome article">
             </div>
         </div>
 
@@ -157,8 +211,8 @@
                 model on histopathology images from various cohorts to predict glioma grade, IDH status, and 1p/19q codeletion.</p>
             </div>
             <div class="img-report2">
-                <img src="imgs/pola.png" alt="Histopathology Image">
-                <img src="imgs/heatmap.png" alt="Heatmap Image">
+                <img src="imgs/articles/pola.png" alt="Histopathology Image">
+                <img src="imgs/articles/heatmap.png" alt="Heatmap Image">
             </div>
         </div>
 
@@ -184,7 +238,7 @@
                 ability to maintain biological relevance.</p>
             </div>
             <div class="img-report">
-                <img src="imgs/GO3T.png" alt="GO3T Architecture Image">
+                <img src="imgs/articles/GO3T.png" alt="GO3T Architecture Image">
             </div>
         </div>
 
@@ -210,7 +264,7 @@
                 and 3D datasets.</p>
             </div>
             <div class="img-report">
-                <img src="imgs/segmentation.png" alt="Segmentation Image">
+                <img src="imgs/articles/segmentation.png" alt="Segmentation Image">
             </div>
         </div>
 
@@ -253,7 +307,7 @@
                 the ones derived from theory.</p>
             </div>
             <div class="img-report">
-                <img src="imgs/diffusion.png" alt="Diffusion Equation Image">
+                <img src="imgs/articles/diffusion.png" alt="Diffusion Equation Image">
             </div>
         </div>
     </section>
